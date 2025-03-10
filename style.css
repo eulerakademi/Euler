@@ -1,0 +1,350 @@
+/* style.css içeriği - DÜZELTİLMİŞ ve GÜNCELLENMİŞ */
+/* Genel Stiller */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Başlık (Header) ve Navigasyon */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  -ms-flex-item-align: center; /* Internet Explorer için dikey hizalama */
+  width: 100px; /* Logo genişliği */
+  /* font-size: 1.5rem;  <- LOGO RESMİNDE YAZI YOKSA BU SATIRA GEREK YOK */
+  font-weight: bold; /* Kalın yazı tipi - LOGO RESMİNDE YAZI YOKSA BU SATIRA GEREK YOK */
+  color: #fff; /* Metin rengi - LOGO RESMİNDE YAZI YOKSA BU SATIRA GEREK YOK */
+  text-decoration: none; /* Alt çizgi - LOGO RESMİNDE YAZI YOKSA BU SATIRA GEREK YOK */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Renk geçiş efekti */
+}
+
+nav a:hover {
+  color: #00bcd4; /* Hover rengi */
+}
+
+/* Ana Bölüm (Main) Stilleri */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Kahraman Bölümü (Hero Section) */
+.hero {
+  background-color: #e0f7fa;
+  /* text-align: center;  <- KALDIRILDI/YORUMA ALINDI */
+  padding: 100px 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto; /* Yatayda ortalamayı korur */
+  text-align: left; /* Metni sola hizala */
+  display: flex;       /* Flexbox'ı etkinleştir */
+  flex-direction: column; /* İçeriği dikey sütun yap */
+  align-items: flex-start; /* İçeriği sol kenara hizala */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Buton Stilleri */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0097a7; /* Hover rengi */
+}
+
+.btn-secondary {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #ffca28; /* Hover rengi */
+}
+
+/* Dersler Bölümü */
+.dersler {
+  background-color: #fff;
+}
+
+.ders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.ders-karti {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ders-karti i {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00bcd4;
+}
+
+.ders-karti h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.ders-karti p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Hakkımızda Bölümü */
+.hakkimizda {
+  background-color: #f4f4f4;
+}
+
+.hakkimizda-icerik {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.hakkimizda-metin {
+  flex: 1;
+}
+
+.hakkimizda-resim {
+  flex: 1;
+  text-align: center;
+}
+
+.hakkimizda-resim img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* İletişim Bölümü */
+.iletisim {
+  background-color: #fff;
+}
+
+.iletisim-formu {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-grup {
+  margin-bottom: 20px;
+}
+
+.form-grup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-grup input[type="text"],
+.form-grup input[type="email"],
+.form-grup textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.iletisim-bilgileri {
+  flex: 1;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.iletisim-bilgileri h3 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.iletisim-bilgileri p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.iletisim-bilgileri i {
+  margin-right: 5px;
+  color: #00bcd4;
+}
+
+
+/* Alt Kısım (Footer) */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative; /* Göreli konumlandırma */
+  bottom: 0; /* Alt kısma yapışık */
+  width: 100%; /* Tam genişlik */
+}
+
+/* Sosyal Medya İkon Stilleri - FOOTER İÇİNDE -  @media QUERY DIŞINA TAŞINDI */
+.social-links {
+  display: flex; /* Yan yana hizalamak için */
+  justify-content: center; /* Yatayda ortalamak için (footer ortasında isterseniz) */
+  align-items: center; /* Dikeyde ortalamak için (isteğe bağlı) */
+  margin-top: 10px; /* Footer içeriği ile ikonlar arası boşluk (isteğe bağlı) */
+}
+
+.social-links a {
+  display: inline-block; /* Blok gibi davranması için (boyutlandırma için) */
+  margin: 0 25px; /* İkonlar arası yatay boşluk - **BOŞLUĞU AYARLAYIN** */
+  font-size: 40px; /* İkon boyutu - ** BOYUTU AYARLAYIN ** */
+  color: #fff; /* İkon rengi (footer renginize göre ayarlayın) - ** RENGİ AYARLAYIN ** */
+  text-decoration: none; /* Link alt çizgisini kaldır */
+  transition: color 0.3s ease; /* Renk geçiş efekti */
+}
+
+.social-links a:hover {
+  color: #00bcd4; /* Hover rengi (isteğe bağlı) */
+}
+/* style.css dosyasına ekleyin */
+
+/* Header WhatsApp İkon Stili */
+.header-whatsapp-link a {
+  display: inline-block; /* Blok gibi davranması için (boyutlandırma için) */
+  margin-left: 20px; /* İletişim menü öğesinden solda boşluk bırakmak için */
+  font-size: 20px; /* İkon boyutu (nav menüsüne uygun) */
+  color: #fff; /* İkon rengi (header renginize göre) */
+  text-decoration: none; /* Link alt çizgisini kaldır */
+  transition: color 0.3s ease; /* Renk geçiş efekti */
+  vertical-align: middle; /* Dikeyde ortalamak için (yazılarla aynı hizaya getirmek için) */
+}
+
+.header-whatsapp-link a:hover {
+  color: #00bcd4; /* Hover rengi (isteğe bağlı) */
+}
+
+
+/* Responsive Tasarım (Mobil Uyumlu) */
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav ul {
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav li {
+      margin: 10px 0;
+  }
+
+  .hero {
+      padding: 80px 0;
+  }
+
+  .hero h1 {
+      font-size: 2rem;
+  }
+
+  .hero p {
+      font-size: 1rem;
+  }
+
+  .ders-grid {
+      grid-template-columns: 1fr; /* Tek sütun */
+  }
+
+  .hakkimizda-icerik {
+      flex-direction: column; /* Alt alta */
+      text-align: center;
+  }
+
+  .hakkimizda-resim {
+      margin-top: 30px;
+  }
+
+  .iletisim-formu {
+      max-width: 100%; /* Tam genişlik */
+  }
+
+  .iletisim-bilgileri {
+      margin-top: 40px;
+  }
+  
+}
